@@ -2,19 +2,19 @@
 
 
 function findMatching(s, sought) {
-    return source.filter( possibleMatch =>
+    return s.filter( possibleMatch =>
       possibleMatch.toLowerCase() === sought.toLowerCase()
     )
   }
   
-  function fuzzyMatch(source, testString) {
-    return source.filter( possibleMatch =>
+  function fuzzyMatch(s, testString) {
+    return s.filter( possibleMatch =>
       possibleMatch.toLowerCase().indexOf(testString.toLowerCase()) === 0
     )
   }
   
-  function matchName(source, soughtName) {
-    return source.filter( record => record.name === soughtName)
+  function matchName(s, soughtName) {
+    return s.filter( record => record.name === soughtName)
   }
   
 
